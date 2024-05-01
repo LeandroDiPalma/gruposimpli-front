@@ -6,6 +6,7 @@ const AccessoryCard = ({ accessory, onEdit, onDelete }) => {
         <Card
             title={accessory.name}
             subtitle={`Price: $${accessory.price}`}
+            className="mb-4 md:mb-0"
         >
             <p>{accessory.description}</p>
             <img 

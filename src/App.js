@@ -9,6 +9,7 @@ import AccessoriesList from './pages/Accessories';
 import PostsList from './pages/Posts';
 import LeadsList from './pages/Leads';
 import './App.css';
+import './styles/output.css'
 import { DealerProvider } from './context/DealerContext';
 import { NotificationProvider } from './context/NotificationContext';
 

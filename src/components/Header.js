@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDealer } from '../context/DealerContext';
 
@@ -13,12 +13,13 @@ function Header() {
         // eslint-disable-next-line
     }, []);
 
+
     return (
         <header className="bg-blue-500 text-white p-4 text-lg flex justify-between items-center">
-            <h1>My Application</h1>
+            <h1>SimpliCar</h1>
             <h2>{dealer?.name}</h2>
             {dealer && (
-                <div>
+                <div className={`md:block`}>
                     <nav>
                         <Link to="/" className="text-white px-2">Home</Link>
                         <Link to={`/dealers/${dealer._id}/vehicles`} className="text-white px-2">Vehicles</Link>

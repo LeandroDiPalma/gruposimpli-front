@@ -16,7 +16,6 @@ const DealerCard = ({ dealer, onEdit, onDelete }) => {
         <Card
             title={dealer.name}
             subtitle={dealer.location}
-            className="mb-4"
         >
             <div className="flex flex-wrap items-center justify-start space-x-4">
                 <button onClick={() => handleNavigate(`/dealers/${dealer._id}/vehicles`)}

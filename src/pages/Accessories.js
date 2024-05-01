@@ -74,7 +74,7 @@ const AccessoriesList = () => {
             <button onClick={handleAdd} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 Add New Accessory
             </button>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {accessories.map(accessory => (
                     <AccessoryCard key={accessory._id} accessory={accessory} onEdit={() => handleEdit(accessory)} onDelete={() => handleDelete(accessory._id)} />
                 ))}
